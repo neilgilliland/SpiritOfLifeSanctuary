@@ -104,6 +104,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\EmailController.cs" />
     <Compile Include="Controllers\FacebookController.cs" />
     <Compile Include="Controllers\NavigateController.cs" />
     <Compile Include="Global.asax.cs">
@@ -140,6 +141,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Helpers\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
@@ -161,6 +163,7 @@
     <Content Include="Views\ChurchService.cshtml" />
     <Content Include="Views\Volunteers.cshtml" />
     <Content Include="Views\Event.cshtml" />
+    <Content Include="Views\ConfirmContact.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
