@@ -104,7 +104,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Controllers\EmailController.cs" />
     <Compile Include="Controllers\FacebookController.cs" />
     <Compile Include="Controllers\NavigateController.cs" />
     <Compile Include="Global.asax.cs">
