@@ -32,7 +32,7 @@ namespace SpiritOfLifeSanctuary.Controllers
                     cmd.ExecuteNonQuery();
                 }
 
-                var toAddress = new MailAddress("info@spiritoflifesanctuary.org.uk", "Spirit of Life Sanctuary");
+                var toAddress = new MailAddress("neil@no41.co.uk", "Spirit of Life Sanctuary"); //info@spiritoflifesanctuary.org.uk
                 var punterAddress = new MailAddress(email, name);
 
                 string subject = "Contact from spiritoflifesanctuary.org.uk";
