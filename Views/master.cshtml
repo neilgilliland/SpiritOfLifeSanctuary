@@ -1,0 +1,47 @@
+﻿<html>
+
+<head>
+
+    <title>spirit of life sanctuary</title>
+
+    <meta name="robots" content="index,follow" />
+    <meta name="description" content="Spirit of Life Sanctuary Website" />
+    <meta name="keywords" content="angels feather spiritualism falkirk readings spiritualist" />
+  
+    <link rel="stylesheet" type="text/css" href='@Url.Content("~/css/site.css")' media="all" /> 
+
+</head>
+
+<body>
+	<div id='page'>
+	<div id='header'>
+        <ul class="links">
+            <li id="Home" style="Right:120px;Top:28px;Width:60px;Height:22px;"><a href="@Url.Action("Home")"></a></li>
+            <li id="Contact" style="Right:22px;Top:28px;Width:76px;Height:22px;"><a href="@Url.Action("Contact")"></a></li>
+            <li id="Workshops" style="Right:235px;Top:105px;Width:55px;Height:15px;"><a href="@Url.Action("Workshops")">Workshops</a></li>
+            <li id="Church" style="Right:152px;Top:105px;Width:50px;Height:15px;"><a href="@Url.Action("ChurchService")">Church&nbsp;Service</a></li>
+            <li id="Volunteers" style="Right:25px;Top:105px;Width:68px;Height:15px;"><a href="@Url.Action("Volunteers")">Volunteers</a></li>
+        </ul>
+	</div>
+
+	<div id='body' class='clearfix'>
+	
+		<div id="content">
+            @RenderBody()
+		</div>
+		
+        <div id="events-label">upcoming events</div>
+		<div id='events'>
+            @Html.Action("Calendar")
+		</div>
+
+	</div>
+
+	<div id='footer'></div>
+	<div id='feather'></div>
+	
+</div>
+
+</body>
+
+</html>
